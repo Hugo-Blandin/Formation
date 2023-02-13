@@ -3,6 +3,7 @@ package day1;
 import java.time.LocalDate;
 
 public class Voiture {
+	
 	// Attributs d'instance 
 	String marque;
 	String modele;
@@ -32,4 +33,5 @@ public class Voiture {
 	{
 		System.out.println("Nbre de voitures en mémoire : "+nbreVoitureCree);
 	}
+	
 }
