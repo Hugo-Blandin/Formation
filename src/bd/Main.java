@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Scanner;
 
 public class Main {
 
@@ -17,8 +18,13 @@ public class Main {
 	     connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecoleit","root", "");
 	     
 	     Statement stmt = connection.createStatement();
+	     Scanner sc = new Scanner(System.in);
 	     
-	     String sql ="insert into etudiant (nom,email,age) values('hugo','hugo.blandin@gmail.com','22')";
+	     String nom="Arthur";
+	     String email="ah.blandin@laposte.net";
+	     int age = 19;
+	     
+	     String sql ="insert into etudiant (nom,email,age) values('"+nom+"','"+email+"','"+age+"')";
 	     int res = stmt.executeUpdate(sql);
 	     System.out.println(res);
 	     
