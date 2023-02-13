@@ -28,8 +28,10 @@ public class Application {
 		
 		System.out.println(Animal.AgeMax);
 		
-		//System.out.println(a1.AgeMax);
-		//System.out.println(a2.AgeMax);
+		System.out.println(a1.AgeMax);
+		System.out.println(a2.AgeMax);
+		
+
 	}
 
 }
