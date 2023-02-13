@@ -18,11 +18,17 @@ public class Main {
 	     connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecoleit","root", "");
 	     
 	     Statement stmt = connection.createStatement();
+	     
 	     Scanner sc = new Scanner(System.in);
 	     
-	     String nom="Arthur";
-	     String email="ah.blandin@laposte.net";
-	     int age = 19;
+	     System.out.println("Donner votre nom");
+	     String nom=sc.nextLine();
+	     
+	     System.out.println("Donner votre email");
+	     String email=sc.nextLine();
+	     
+	     System.out.println("Donner votre age");
+	     int age=sc.nextInt();
 	     
 	     String sql ="insert into etudiant (nom,email,age) values('"+nom+"','"+email+"','"+age+"')";
 	     int res = stmt.executeUpdate(sql);
